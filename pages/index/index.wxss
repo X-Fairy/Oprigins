@@ -1,0 +1,60 @@
+/**index.wxss**/
+/* 头部导航 */
+.container{
+  padding:0;
+}
+.slider,.slider swiper,.slider image{
+  width: 100%;
+  height:520px;
+}
+.img{
+  margin-top:30px;
+}
+.img,.img image{ 
+  width: 100%;
+  height: 550px;
+}
+.content{
+  width: 100%;
+  text-align: center;
+}
+.content text{
+  display: inline-block;  
+  padding-right:20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid black;
+}
+.content text.active{
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+.newProduct swiper{
+  height: 430px;
+}
+.newProduct text{
+  font-size:14px;
+  display: block;
+  border: 0;
+  margin-bottom: 10px;
+}
+.newProduct text.sub{
+  font-weight: bold;
+}
+.newProduct button{
+  width:90px;
+  height: 20px;
+  line-height: 20px;
+  font-size:12px;
+  letter-spacing:3px;
+  background: black;
+  color: white;
+}
+.show,.show image{
+  width: 100%;
+  min-height: 500px;
+}
+.show text{
+  margin:10px 0 20px;
+  border: none;
+  letter-spacing: 3px;
+}

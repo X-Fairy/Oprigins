@@ -1,0 +1,127 @@
+/* pages/detail/detail.wxss */
+.container{
+  padding-top:30px;
+  position: relative;
+}
+.detail{
+  text-align: left;  
+  margin-left:20px;
+}
+text{
+  display: block;
+  letter-spacing: 3rpx;
+  font-size: 12px;
+  color: rgb(134, 131, 131);
+  line-height:45rpx;
+}
+.detail text.title{
+  color: black;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.detail text.sub{
+  
+  margin-bottom: 10px;
+}
+.detail text.price{
+  font-size: 15px;
+  color: black;
+}
+.detail image:last-child{
+  width: 100%;
+  margin-top:40rpx;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer .home{
+  width:20%;
+  border-right: 1px solid #ddd;
+}
+.footer image{
+  width: 80%;
+  height: 80%;
+  padding-top:5px;
+  padding-left: 5px;
+}
+.footer .car{
+  width: 14%;
+}
+.footer .add,.footer .buy{
+  width:33%; 
+}
+.footer button{
+  border: 0;
+  font-size: 15px;
+}
+.footer .buy button{
+  background: black;
+  color: white;
+  
+}
+.carbox{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background:white;
+}
+.carbox .carinfo text,.carbox .carinfo view{
+  display: inline-block;
+  padding:5px;
+}
+.carbox .carinfo text{
+  color: black;
+  float: left;
+  margin-left: 10px;
+}
+.carbox .carinfo view{
+  width:100px;
+  height: 30px;
+  float: right;
+  margin-right: 10px;
+}
+.carbox .carinfo view button{
+  border: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  
+}
+.carbox .carnav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border:1px solid #ddd;
+}
+.carbox .carnav button:first-child{
+  width:10%;
+  align-items: center;
+}
+.carbox .carnav view.txt{
+  width: 45%;
+  align-items: center;
+  
+}
+.carbox .carnav text{
+  color: black;
+  padding-left: 60px;
+  padding-top:10px;
+}
+.carbox .carnav button:last-child{
+  width: 45%;
+  font-size: 15px;
+  align-items: center;
+}
+.carbox span{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+

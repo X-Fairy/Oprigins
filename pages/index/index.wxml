@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='slider'>
+    <swiper autoplay='{{true}}'>
+      <swiper-item wx:for="{{banner}}" wx:key="index" >
+        <image src="{{item.img_url}}" lazy-load="true" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='img'>
+    <image src='http://127.0.0.1:3000/index.gif'></image>
+  </view>
+  <view class='content'>
+    <text class='active'>当季新品</text>
+    <text>畅销榜单</text> 
+    <view class='newProduct'>      
+      <swiper autoplay='{{true}}'>
+        <swiper-item wx:for="{{product}}" wx:key="index">
+          <image src='{{item.pic}}'></image>
+          <text class='sub'>{{item.subtitle}}</text>
+          <text>{{item.title}}</text>
+          <text>￥{{item.price}}</text>
+          <button>立即购买</button>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- <view class='hotProduct'>
+    </view> -->
+    <view class='show'>
+      <image src='http://127.0.0.1:3000/index1.jpg'></image>
+      <image src='http://127.0.0.1:3000/index2.jpg'></image>
+      <text>明星系列</text>
+    </view>
+   </view>
+  
+</view>

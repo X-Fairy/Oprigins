@@ -1,0 +1,41 @@
+<!--pages/car/car.wxml-->
+<view class='container'>
+  <view class='header'>
+    <text>我的购物车</text>
+    
+  </view>
+  <scroll-view class="scroll" scroll-y="true">
+    <view class='list' wx:for="{{carts}}" wx:key="index">
+      <view class='check' >
+        <checkbox checked='{{item.checked}}' data-index='{{index}}' bindtap='select'></checkbox>
+      </view>
+      <view class='pic'>
+        <image src='{{item.pic}}'></image>
+      </view>
+      <view class='detail'>
+        <text>{{item.subtitle}}</text>
+        <button bindtap='del' class='del' data-index='{{index}}'>删除</button>
+        <view class='info'>
+          <text>￥{{item.price}}</text>
+          <view>
+            <button bindtap='reduce' data-index='{{index}}'>-</button>
+            <button>{{item.count}}</button>
+            <button bindtap='add' data-index='{{index}}'>+</button>
+            
+          </view>
+        </view>
+        
+      </view>
+    </view>
+  </scroll-view>
+  <view class="bottom_total">
+    <view class="bottom_line"></view> 
+    <view class="row">
+      <checkbox checked='{{checkedAll}}' bindtap='selectAll' data-index='{{carts}}'></checkbox>
+      <text class="small_text" >全选</text>
+      <text>合计:￥ </text>
+      <text class="price">{{totalPrice}}</text>
+      <button class="button-red" >去结算</button>
+    </view>
+  </view>
+</view>

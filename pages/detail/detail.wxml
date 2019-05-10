@@ -1,0 +1,50 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+<view class='detail' style='display:{{display}}'>
+  <image src='{{product[0].pic}}'></image>
+  <text class='title'>{{product[0].title}}</text>
+  <text class='sub'>{{product[0].subtitle}}</text>
+  <text class='price'>￥{{product[0].price}}</text>
+  <text class='sub'>{{product[0].subtitle}}</text>
+  <text>春装包含正装产品：</text>
+  <text>水润畅饮夜间面膜750ML</text>
+  <text>源源滋养梦中畅饮，告别紧绷干燥，肌肤一夜喝饱水！</text>
+  <text>套装包含礼赠：</text>
+  <text>1.灵芝水30ml</text>
+  <text>2.咖啡因凝乳5ml</text>
+  <text>3.Origins硅胶面膜刷</text>
+  <text>（套装总价值：354元）</text>
+  <image src='http://127.0.0.1:3000/detail.jpg'></image>
+</view>
+<view class='footer' wx:if="{{isShow}}">
+  <view class='home'>
+    <image src='http://127.0.0.1:3000/icon/home.jpg'></image>
+  </view>
+  <view class='car' bindtap="car">
+    <image src='http://127.0.0.1:3000/icon/car.jpg'></image>
+  </view>
+  <view class="add" bindtap='show'>
+    <button>加入购物车</button>
+  </view>
+  <view class='buy'>
+    <button >立即购买</button>
+  </view>
+</view>
+<view class='carbox' wx:else>
+  <view class='carinfo'>
+    <text>{{product[0].subtitle}}</text>
+    <view>
+      <button bindtap='reduce'>-</button>
+      <span>{{count}}</span>
+      <button bindtap='add'>+</button>
+    </view>
+  </view>
+  <view class='carnav'>
+    <button  bindtap='hide'>×</button>
+    <view class='txt'>
+      <text>￥{{product[0].price}}</text>
+    </view>    
+    <button bindtap='addCar'>加入购物车</button>
+  </view>
+</view>
+</view>
